@@ -16,6 +16,7 @@ header {
         }
 
         ul {
+            display: none;
             list-style: none;
             flex-direction: column;
             gap: 0.5rem;
@@ -27,7 +28,11 @@ header {
             padding: 1rem;
         }
 
-        &.show {
+        .btn-default {
+            display: none;
+        }
+
+        #nav-links.show {
             display: flex;
         }
 
@@ -39,6 +44,7 @@ header {
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 500;
+                transition: all 0.3s ease;
 
                 &:hover {
                     color: var(--color-primary-1);
