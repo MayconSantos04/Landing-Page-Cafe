@@ -65,6 +65,27 @@
 }
 
 @media (min-width: 768px) {
+    header {
+        .navbar {
+            .btn-mobile {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                gap: 1rem;
+                width: auto;
+                padding: 0;
+            }
+
+            .btn-default {
+                display: block;
+            }
+        }
+    }
+
     #container {
         background-image: url(../assets/background-desktop.png);
         background-size: cover;
@@ -78,6 +99,24 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 24px;
+        }
+    }
+
+    #products {
+        min-height: 100vh;
+        gap: 8rem;
+
+        .products-cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+
+            .product-card {
+                img {
+                    width: 250px;
+                }
+            }
         }
     }
 }

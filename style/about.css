@@ -6,14 +6,14 @@
     background-color: var(--color-primary-1);
     background-image: url(../assets/about/bg-about.png);
     min-height: calc(100vh - 96px);
-    box-shadow: 0 4px 6px rgba(0, 0, blue0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
 
     .title {
         color: var(--color-neutral-0);
 
         &::before {
-            background-color: var(--color-secondary-1);
+            background-color: var(--color-secondary);
         }
     }
 
@@ -33,13 +33,13 @@
             background-color: var(--color-primary-2);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-            & h3 {
+            h3 {
                 color: var(--color-neutral-0);
                 font-size: 1.8rem;
                 margin-bottom: 4px;
 
-                & span {
-                    color: var(--color-secondary-1);
+                span {
+                    color: var(--color-secondary);
                 }
             }
 
@@ -48,7 +48,7 @@
                 font-size: 1rem;
 
                 span {
-                    color: var(--color-secondary-1);
+                    color: var(--color-secondary);
                     font-weight: 500;
                 }
             }
@@ -74,6 +74,7 @@
         .about-info:first-child {
             order: 2;
         }
+
         .about-info:last-child {
             order: 3;
         }
